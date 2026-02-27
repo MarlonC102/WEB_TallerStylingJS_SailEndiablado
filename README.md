@@ -6,7 +6,8 @@ Incluye una To-Do List básica: agregar, eliminar y marcar tareas como completad
 Integrantes
 - Marlon Castañeda Quiroz  
 - Santiago Cadavid Arboleda
-Cómo ejecutar
+
+Cómo ejecutar;
 Abrir index.html en el navegador
  
 Te queremos, besos y abrazos del mejor Sail de Medellín.
