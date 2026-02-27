@@ -49,9 +49,17 @@ body {
     font-weight: bold;
 }
 
+.btn:hover {
+    background: #16a34a;
+}
+
 .empty {
-    margin: 16px 0 0;
-    color: #777;
+    margin: 22px 0 0;
+    padding: 34px 16px;
+    border: 2px dashed #e5e5e5;
+    border-radius: 14px;
+    text-align: center;
+    color: #b9b9b9;
 }
 
 .list {
@@ -63,13 +71,21 @@ body {
 .item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px 12px;
+    gap: 12px;
+    padding: 16px 6px;
+    margin: 0;
+    border: 0;
     border: 1px solid #eee;
-    border-radius: 10px;
+    border-radius: 0;
     margin-bottom: 10px;
-    cursor: pointer;
+    background: transparent;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
 }
 
 .item.completed .text {
@@ -78,10 +94,70 @@ body {
 }
 
 .delete {
+    margin-left: auto;
     border: 0;
     background: transparent;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1;
-    color: #444;
+    color: #bdbdbd;
+}
+
+.delete:hover {
+    color: #ff0000;
+}
+
+.item .sparkle,
+.item .badge {
+  display: none;
+}
+
+.item--new {
+  margin: 14px 0;
+  padding: 14px 14px;
+
+  border-bottom: 0;
+  border-radius: 12px;
+  background: #eef0ff;
+}
+
+.item--new .sparkle,
+.item--new .badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.item--new .sparkle {
+  color: #4f46e5;
+  font-size: 14px;
+}
+
+.item--new .text {
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+.item--new .badge {
+  background: #e1e4ff;
+  color: #4f46e5;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.item--new .delete {
+  opacity: 0;
+  pointer-events: none;
+}
+.item--new:hover .delete {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.counterCompleted{
+  text-align: right;
+  margin-top: 12px;
+  color: #888;
+  font-size: 14px;
 }
